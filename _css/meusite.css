@@ -1,0 +1,264 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans&display=swap');
+
+html{
+    margin:0px;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    width:100%;
+    background-color:#000000 ;
+}
+
+/* HEADER */
+#header{
+    position:relative;
+    background: url("../_imagens/crf-menu.jpg") no-repeat right #C50B0E;
+    padding: 40px;
+    margin: -10px;
+    border-top: #ECF4F8 double;
+    border-bottom: #ECF4F8 double;
+    border-width: 15px;
+}
+#header h1{
+    color:#ECF4F8;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 4px 2px black;
+    text-decoration: underline;
+    text-decoration-color: #ECF4F8;
+}
+
+/* TEXTO + TIME ESCALAÇÃO*/
+#team .container{
+    display:block;
+}
+#team .container .text{
+    display:block;
+    width: 50%;
+    height: 700px;
+    float:left;
+    margin-left: 0px;
+    margin-top: 5px;
+    background-color: #000000;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: left;
+}
+#team .container .text h2{
+    text-align: left;
+    color: #ECF4F8;
+}
+#team .container .text p{
+    text-align: left;
+    color: #ECF4F8;
+}
+#team .container .text img{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 100px;
+    border:#fafa6e solid;
+}
+#team .container .text h1{
+    color:#ffffff;
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: overline underline;
+    text-decoration-color: #fafa6e;
+    text-transform: uppercase;
+    text-shadow: 
+               -1px -1px 0px #fafa6e, 
+               -1px 1px 0px #fafa6e,                    
+                1px -1px 0px #fafa6e,                  
+                1px 0px 0px #fafa6e;
+}
+#team .container .camp{
+    width: 50%;
+    height: 700px;
+    margin-top: 5px;
+    float: right;
+    background: url("../_imagens/camp.png") #000000 center no-repeat;
+    background-size: 500px 620px;
+    text-align: center;
+    font-size:xx-large
+}
+#team .container .camp ul{
+    list-style-type: none;
+}
+#team .container .camp .ata li{
+    display: inline-block;
+}
+#team .container .camp .mei li{
+    display: inline-block;
+}
+#team .container .camp .mei #AE{
+    display: inline-block;
+    margin-right: 200px;
+}
+#team .container .camp .vol li{
+    display: inline-block;
+}
+#team .container .camp .zag li{
+    display: inline-block;
+}
+#team .container .camp .zag #FL{
+    display: inline-block;
+    margin-right: 50px;
+}
+#team .container .camp .zag #RA{
+    display: inline-block;
+    margin-left: 50px;
+}
+#team .container .camp .gol li{
+    display: inline-block;
+}
+.button{
+    color:#ECF4F8;
+    margin: 0.5em;
+    font-size: xx-large;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(165, 8, 8);
+    border: #ECF4F8 solid;
+    border-radius: 50%;
+    box-shadow:4px 8px 8px rgb(221, 19, 19);
+    transition: background-color 1s;
+}
+.button:hover{
+    color:#C50B0E;
+    background-color: #ECF4F8;
+}
+
+/* JOGADORES */
+#players h1{
+    font-size: xx-large;
+    color: #C50B0E;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration:double;
+    text-decoration-color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,                    
+                1px -1px 0px #FFF,                  
+                1px 0px 0px #FFF;
+}
+#players hr{
+    border: #c21818 solid;
+}
+#players .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+#players .wrapper img{
+    width: 300px;
+    height: 300px;
+}
+#players .wrapper section {
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    margin: 20px 0;
+}
+#players .wrapper section .item {
+    padding: 0 2px;
+    transition: 250ms all;
+}
+#players .wrapper section .item:hover {
+    margin: 0 40px;
+    transform: scale(1.2);
+}
+#players .wrapper section a {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-size: 6em;
+    background: black;
+    width: 80px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+}
+#players .wrapper section a:nth-of-type(1) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+#players .wrapper section a:nth-of-type(2) {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+ @media only screen and (max-width: 600px) {
+    a.arrow__btn {
+    display: none;
+    }
+}
+/* FOOTER */
+#prefooter{
+    display:block;
+    margin-bottom: -20px;
+}
+#prefooter .container{
+    position: relative;
+    bottom: 0;
+    display:block;
+    width: 97%;
+    height: 10%;
+    padding:20px;
+    margin:-40px;
+    margin-left:-6px;
+    margin-right:-10px;
+    margin-top: 60px;
+    border-top: #ffffff double;
+    border-bottom: #000000 solid;
+    border-width: 10px;
+    background-color:red ;
+
+}
+#prefooter .container .contato ul{
+    list-style: none;
+    text-align: right;
+    color:#ECF4F8;
+}
+#prefooter .container .contato h2{
+    color:#000000;
+    text-shadow: -1px -1px 0px #FFF, 
+                 -1px 1px 0px #FFF,                    
+                  1px -1px 0px #FFF,                  
+                  1px 0px 0px #FFF;
+    text-align: right;
+    margin-top: -60px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.contato a:link{
+    color: #ECF4F8;
+}
+#prefooter .container .contato h1{
+    color: rgb(0, 0, 0);
+    font-size:40px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    text-shadow: -1px -1px 0px #FFF, 
+                 -1px 1px 0px #FFF,                    
+                  1px -1px 0px #FFF,                  
+                  1px 0px 0px #FFF;
+    font-family: 'Nunito Sans', sans-serif;
+}
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color:#ECF4F8;
+    text-align: center;
+    margin-top: 35px;
+}
